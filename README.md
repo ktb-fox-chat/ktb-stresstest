@@ -1,3 +1,10 @@
+## Artillery  
+
+* 테스트 결과 추출  
+```
+artillery run playwright-artillery.yml --output report.json
+artillery report --output report.html report.json
+```
 
 ## 주요 기능 설명
 

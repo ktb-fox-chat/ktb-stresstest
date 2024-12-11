@@ -1,5 +1,5 @@
 config:
-  target: https://ktb-chat-test.goorm.team
+  target: http://localhost:3000/
 
   phases:
   - duration: 1
@@ -8,10 +8,10 @@ config:
   engines:
     playwright:
       launchOptions:
-        headless: true
+        headless: false
     
   processor: "./stresstest/app.js"
 
 scenarios:
   - engine: playwright
-    flowFunction: "createNewChat" 
+    flowFunction: "updateProfileImage" 
