@@ -2,7 +2,9 @@
   "name": "artillery",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clear": "set MONGO_URI=mongodb+srv://몽고디비유저:몽고디비비밀번호@ktb.5np8h.mongodb.net/?retryWrites=true^&w=majority^&appName=ktb && node ../ktb-BootcampChat/backend/utils/test_adaptor.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

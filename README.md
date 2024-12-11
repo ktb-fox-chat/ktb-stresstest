@@ -6,6 +6,18 @@ artillery run playwright-artillery.yml --output report.json
 artillery report --output report.html report.json
 ```
 
+* DB 데이터 초기화
+```
+몽고디비유저: 몽고디비비밀번호를 각자 기호에 맞게 수정
+
+"scripts": {
+    "clear": "set MONGO_URI=mongodb+srv://몽고디비유저:몽고디비비밀번호@ktb.5np8h.mongodb.net/?retryWrites=true^&w=majority^&appName=ktb && node ../ktb-BootcampChat/backend/utils/test_adaptor.js"
+},
+```
+```
+npm run clear
+```
+
 ## 주요 기능 설명
 
 ### 1. **메인 엔트리 (`app.js`)**
