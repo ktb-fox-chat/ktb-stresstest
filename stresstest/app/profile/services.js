@@ -8,7 +8,7 @@ const addProfileImage = async (page, filename) => {
 
   const [fileChooser] = await Promise.all([
       page.waitForEvent('filechooser'),
-      page.click('//*[@id="radix-:rj:"]/div/div/div/div[2]/button'),
+      page.click('//*[starts-with(@id, "radix-:r")]/div/div/div/div[2]/button'),
   ]);
   
   await fileChooser.setFiles(path.join(__dirname + filename));
